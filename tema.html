@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primer acercamiento HTML</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <!-- El preload nos va a permitir solicitar recursos html rapidamente -->
+    <link rel="preload" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html">
+            <img class="header__logo" src="img/logo.webp" alt="Logotipo">
+            <!-- texto alternativo ayuda en el posicionamiento -->
+        </a>
+    </header>
+    <nav class="navegacion">
+        <a class="navegacion__enlace navegacion__enlace--activo" href="index.html">Contenidos</a>
+        <a class="navegacion__enlace" href="nosotros.html">Acerca de</a>
+        <a class="navegacion__enlace" href="agenda.html">Agendar cita</a>
+    </nav>
+
+    <main class="contenedor">
+        <h1>HTML</h1>
+        <div class="nosotros__contenido">
+            <p>
+                Registre el nivel de aprovechamiento del contenido del curso respectivo
+            </p>
+            <form action="procesar.php" method="post" class="formulario">
+                <select name="aprovechamiento" class="formulario__campo">
+                    <option disabled selected>--Nivel de aprovechamiento--</option>
+                    <option>Bueno</option>
+                    <option>Muy bueno</option>
+                    <option>Excelente</option>
+                </select>
+                <input type="number" name="minutos" class="formulario__campo" placeholder="Minutos invertidos">
+                <input type="submit" class="formulario__submit" value="Registrar progreso">
+            </form>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__texto">SC-502 Ambiente Web Cliente Servidor - Todos los derechos Reservados 2023.</p>
+    </footer>
+</body>
+
+</html>
+
+</html>

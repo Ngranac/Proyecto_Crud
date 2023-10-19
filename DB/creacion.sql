@@ -1,0 +1,7 @@
+CREATE TABLE alumno
+( `id` INT
+(11) NOT NULL AUTO_INCREMENT , `nombre` VARCHAR
+(50) NOT NULL , `correo` VARCHAR
+(50) NOT NULL , `telefono` VARCHAR
+(50) NOT NULL , PRIMARY KEY
+(`id`)) ENGINE = InnoDB;

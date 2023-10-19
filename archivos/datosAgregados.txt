@@ -1,0 +1,8 @@
+Eduardo1,sgonzalez20725@ufide.ac.cr,66543789
+Eduardo,sgonzalez20725@ufide.ac.cr,66543789
+Sophia,sgonzalez20725@ufide.ac.cr,66543789
+Sophia,sgonzalez20725@ufide.ac.cr,66543789,[HTML5;PHP;JavaScript;]
+Sophia,sgonzalez20725@ufide.ac.cr,66543789,[HTML5;PHP;JavaScript;]
+Eduardo,cguadamuz20725@ufide.ac.cr,66543789,[]
+Natasha,granadonatasha427@gmail.com,84782537,[HTML5;PHP;JavaScript;]
+,,,[]

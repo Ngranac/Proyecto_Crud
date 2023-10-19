@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primer acercamiento HTML</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <!-- El preload nos va a permitir solicitar recursos html rapidamente -->
+    <link rel="preload" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html">
+            <img class="header__logo" src="img/logo.webp" alt="Logotipo">
+            <!-- texto alternativo ayuda en el posicionamiento -->
+        </a>
+    </header>
+    <nav class="navegacion">
+        <a class="navegacion__enlace" href="index.html">Contenidos</a>
+        <a class="navegacion__enlace navegacion__enlace--activo" href="nosotros.html">Acerca de</a>
+        <a class="navegacion__enlace" href="agenda.html">Agendar cita</a>
+    </nav>
+
+    <main class="contenedor">
+        <h1>Nosotros</h1>
+
+        <div class="nosotros">
+            <div class="nosotros__contenido">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum voluptatum quisquam, earum molestiae at impedit sint voluptatem qui dolore non illum placeat quidem ad blanditiis aspernatur. Explicabo, culpa necessitatibus! Ipsum.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum porro, sit omnis qui labore, quasi blanditiis quia repellendus sapiente repudiandae, vel deleniti aliquid exercitationem iusto dolore fugiat nostrum culpa! Similique!
+                </p>
+            </div>
+            <img class="nosotros__imagen" src="img/nosotros.png" alt="imagen nosotros">
+        </div>
+    </main>
+
+    <section class="contenedor comprar">
+        <h2 class="comprar__titulo">¿Por qué estudiar con nosotros?</h2>
+
+        <div class="bloques">
+            <div class="bloque">
+                <img class="bloque__imagen" src="img/icono_1.svg" alt="porque comprar">
+                <h3 class="bloque__titulo">El Mejor Precio</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam in reiciendis dolore consectetur accusantium unde harum illo quidem atque iusto natus, nemo iure magnam explicabo rem, deleniti at ipsa sunt!</p>
+            </div>
+            <!-- bloque -->
+
+            <div class="bloque">
+                <img class="bloque__imagen" src="img/icono_2.svg" alt="porque comprar">
+                <h3 class="bloque__titulo">Para Devs</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores voluptatibus eaque quas sint cupiditate aliquam, cumque ratione alias quidem dolor neque fugit a commodi atque minus! Ad inventore necessitatibus fugit.</p>
+            </div>
+            <!-- bloque -->
+
+            <div class="bloque">
+                <img class="bloque__imagen" src="img/icono_3.svg" alt="porque comprar">
+                <h3 class="bloque__titulo">La mejor en ingenierías</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores excepturi voluptates aliquid sed illum, perspiciatis laborum atque itaque odit ad quo unde quia laudantium, nostrum quis placeat libero nobis delectus!</p>
+            </div>
+            <!-- bloque -->
+
+            <div class="bloque">
+                <img class="bloque__imagen" src="img/icono_4.svg" alt="porque comprar">
+                <h3 class="bloque__titulo">La Mejor Calidad</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores excepturi voluptates aliquid sed illum, perspiciatis laborum atque itaque odit ad quo unde quia laudantium, nostrum quis placeat libero nobis delectus!</p>
+            </div>
+            <!-- bloque -->
+        </div>
+        <!-- bloques -->
+    </section>
+
+    <footer class="footer">
+        <p class="footer__texto">SC-502 Ambiente Web Cliente Servidor - Todos los derechos Reservados 2023.</p>
+    </footer>
+</body>
+
+</html>
+
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primer acercamiento HTML</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <!-- El preload nos va a permitir solicitar recursos html rapidamente -->
+    <link rel="preload" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html">
+            <img class="header__logo" src="img/logo.webp" alt="Logotipo">
+            <!-- texto alternativo ayuda en el posicionamiento -->
+        </a>
+    </header>
+    <nav class="navegacion">
+        <a class="navegacion__enlace" href="index.html">Contenidos</a>
+        <a class="navegacion__enlace" href="nosotros.html">Acerca de</a>
+        <a class="navegacion__enlace navegacion__enlace--activo" href="agenda.html">Agendar cita</a>
+    </nav>
+
+    <main class="contenedor">
+        <h1>Agendar una cita para tutoría</h1>
+        <div class="nosotros__contenido">
+            <p>
+                Registre la información que se le solicita
+            </p>
+            <form action="procesar-formulario.php" method="post" class="formulario">
+             <!-- novalidate -->
+                <div>
+                    <label for="nombre">Nombre estudiante:</label>
+                    <input type="text" name="nombre-completo" id="nombre" placeholder="Digite su nombre">
+                </div>
+                <div>
+                    <label for="correo">Correo estudiante:</label>
+                    <input type="email" name="correo" id="correo" placeholder="Digite su correo">
+                </div>
+                <div>
+                    <label for="telefono">Teléfono estudiante:</label>
+                    <input type="number" name="telefono" id="telefono" placeholder="Digite su teléfono">
+                </div>
+
+                <div>
+                    <h2>Temas de interés</h2>
+                    <div>
+                        <input type="checkbox" name="intereses[]" id="check1" value="HTML5">
+                        <label for="check1">HTML5</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="intereses[]" id="check2" value="PHP">
+                        <label for="check2">PHP</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="intereses[]" id="check3" value="JavaScript">
+                        <label for="check3">JavaScript</label>
+                    </div>
+                </div>
+
+                <div>
+                    <h2>Modalidades</h2>
+                    <div>
+                        <input type="radio" name="modalidad" id="radio1" value="Virtual">
+                        <label for="radio1">Virtual</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="modalidad" id="radio2" value="Presencial">
+                        <label for="radio2">Presencial</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="modalidad" id="radio3" value="Mixta">
+                        <label for="radio3">Mixta</label>
+                    </div>
+                </div>
+
+                <div>
+                    <h2>Rango de edades</h2>
+                    <select name="rangos" id="rangos">
+                        <option value="" disabled selected>Seleccione un rango de edad</option>
+                        <option value="Menor">Entre 0 y 17 años</option>
+                        <option value="Mayor">Entre 18 y 65 años</option>
+                        <option value="Jubilado">Entre 65 y 90 años</option>
+                    </select>
+                </div>
+
+                <div>
+                    <h2>Fecha de la cita:</h2>
+                    <input type="date" name="fecha" id="fecha">
+                </div>
+
+                <input type="submit" class="formulario__submit" value="Procesar información">
+            </form>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__texto">SC-502 Ambiente Web Cliente Servidor - Todos los derechos Reservados 2023.</p>
+    </footer>
+</body>
+
+</html>
+
+</html>
